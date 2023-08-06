@@ -9,11 +9,16 @@
 <body>
     <h1>EXOSHARE</h1>
     <h3>ExoShare only modifies how the share link looks in discord, except for the link type. Invalid image links will just show nothing in discord.</h3>
-    <form action="javascript:createLink()">
+    <br>
+    <br>
+    <form action="javascript:checkLink()">
         <label for="sharelink">exoracer.page.link/</label>
         <input id="sharelink" type="text" placeholder="6yTfuUcJrrvRJHHm7" title="type your exoracer share link here to auto-fill the rest of the details..">
+        <input type="submit" value="Auto-fill information">
         <br>
         <br>
+    </form>
+    <form action="javascript:createLink()">
         <label for="levelid">Level ID: </label>
         <input id="levelid" type="text" placeholder="6348c481-80e8-46fc-b420-ef10bda1a479" title="type the level id here..">
         <br>
@@ -28,6 +33,7 @@
         <br>
         <label for="thumb">Thumbnail: </label>
         <input id="thumb" type="text" placeholder="https://storage.googleapis.com/exoracer-bd008.appspot.com/levels/6348c481-80e8-46fc-b420-ef10bda1a479-2.png" title="type the url for the level thumbnail here..">
+        <button onclick="javascript:generateThumb()">Generate URL</button>
         <br>
         <label for="type">Link Type: </label>
         <select id="type">
