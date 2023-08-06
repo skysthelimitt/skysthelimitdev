@@ -6,7 +6,11 @@
     <title>ExoShare</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="main.js"></script>
+    </head>
 <body>
     <h1>EXOSHARE</h1>
     <h3>ExoShare only modifies how the share link looks in discord, except for the link type. Invalid image links will just show nothing in discord.</h3>
@@ -29,12 +33,12 @@
         <label for="desc">Level Description: </label>
         <input id="desc" type="text" placeholder="interesting level description" title="type the level description here..">
         <br>
-        <label for="thumb">Level Version: </label>
-        <input id="thumb" type="text" placeholder="interesting level name" title="type the url for the level thumbnail here..">
+        <label for="version">Level Version: </label>
+        <input id="version" type="text" placeholder="interesting level version" title="type the level version here..">
         <br>
         <label for="thumb">Thumbnail: </label>
         <input id="thumb" type="text" placeholder="https://storage.googleapis.com/exoracer-bd008.appspot.com/levels/6348c481-80e8-46fc-b420-ef10bda1a479-2.png" title="type the url for the level thumbnail here..">
-        <button onclick="javascript:generateThumb()">Generate Thumbnail URL</button>
+        <button type="button" onclick="generateThumb()">Generate Thumbnail URL</button>
         <br>
         <label for="type">Link Type: </label>
         <select id="type">
