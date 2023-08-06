@@ -16,7 +16,7 @@ body {
 }
 h1 {
     font-family: 'Monoton', cursive;
-    font-size: 40px;
+    font-size: 50px;
 }
 h3 {
     font-size: 20px;
@@ -31,7 +31,7 @@ input[type=text] {
     border-width: 3px;
     border-radius: 2.5px;
     margin: 2px;
-    width: 200px;
+    width: 300px;
 }
 label {
     font-size: 20px;
@@ -49,13 +49,6 @@ select {
     border-style: none;
     padding: 3px;
     font-size: 20px;
-}
-
-option {
-    background-color: #3a2574;
-    border-color: #7b4afa;
-    border-width: 100px;
-    text-align: left;
 }
 
 input[type=submit] {
