@@ -23,6 +23,7 @@ function createLink() {
     title = $("#title").val();
     desc = $("#desc").val();
     thumb = $("#thumb").val();
+    type = $("#type").val();
 
     if(level_id == "" || title == "" || ver == "" || desc == "" || thumb == "") {
         toast("Make sure to fill every input box.");
@@ -30,7 +31,7 @@ function createLink() {
     }
 
     longurl = "https://exoracer.page.link/?link=https://exoracer.io/?link%3DLEVEL%26levelId%3D" + level_id + "%26levelVersion%3D" + ver + "&apn=com.nyanstudio.exoracer&ofl=https://exoracer.io/deeplinkfallback.php?title%3D" + title + "%26description%3D" + desc + "%26imageUrl%3D" + thumb + "&ibi=com.nyanstudio.exoracer&st=" + title + "&sd=" + desc + "&si=" + thumb;
-    navigator.clipboard.writeText(longurl);
+    console.log(longurl);
 }
 
 function toast(toasttext) {
