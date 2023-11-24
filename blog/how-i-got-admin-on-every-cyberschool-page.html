@@ -5,7 +5,7 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>Blog Post | skysthelimit.dev</title>
+    <title>how i got admin on every cyberschool website | skysthelimit.dev</title>
     <link
       rel="stylesheet"
       href="/style.css" />
@@ -14,10 +14,27 @@
     <div id="content">
       <div id="title">
         <a href="/index.html"> <img class="backarrow" src="/img/arrowback.svg" style="filter: invert(1)"/> </a>
-        <h1>How I got Admin to hundreds of school websites</h1>
+        <h1>how i got admin on every cyberschool website</h1>
       </div>
       <hr />
-      <p>interesting story, nothing here yet though</p>
+      <p>please dont send hate to cyberschool, i emailed them after, very cool people :)</p>
+      <h2>what is cyberschool?</h2>
+      <p>cyberschool is a company owned by ies, which does a lot of things for school, but this post is about the websites they create for schools.</p>
+      <h2>the actual story</h2>
+      <p>so, this happened a few weeks after my freshman year of school started. being bored since all of my classes are easy (minus geometry, way too fucking difficult), im spending my free time doing whatever</p>
+      <p>i decided i wanted to look through some of the html and js of my schools website, and im finding interesting apis and functions, but nothing crazy yet.</p>
+      <img src="/img/blog/loadCategories.png">
+      <p>i find a weird api called "doLoginAs.cfm", but i cant figure out how to use it, so i move on</p>
+      <p>i continue scrolling, and i find weird function, called "performLoginAs", and i see it takes in one parameter, so out of curiosity, i run "performLoginAs(1)" in console</p>
+      <p>the page reloads.. and it just fucking worked???</p>
+      <img src="/img/blog/adminPage.jpg" class="blog">
+      <p class="caption">the only image i have of being logged into admin</p>
+      <p>im in pure shock this worked, who wouldve left a javascript function that lets you log into any account?</p>
+      <p>i later realized it took a user id as the parameter, and of course, user id 1 is the webmaster. aka, i have pretty much complete control over what messages are displayed to anyone who goes to my schools website</p>
+      <p>i quickly write another email, this time to the director of technology for my district (im sure they love me so much now)</p>
+      <p>while i wait, i do some more testing. i know all of the websites that this company made also have a "school.cyberschool.com" link, so i just went to google, typed "site:*.cyberschool.com", and clicked the first link. it worked.</p>
+      <p>i could go onto any one of hundreds of school websites, and just get admin, and do whatever i wanted.</p>
+      <p>luckily, the next morning, i got a reply (AND HE SPELT MY NAME WRONG AGAIN.) and it was fixed pretty quickly. the api was also locked off, requiring some authentication now.</p>
     </div>
   </body>
 </html>
